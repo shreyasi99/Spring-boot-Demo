@@ -13,7 +13,7 @@ pipeline {
          // here we build the maven project and generated jar file , with the help of this file generated docker image
     stage('Build jar file') { 
            steps {
-              withMaven(maven: 'maven'){dir ('Spring-boot-Demo'){ sh 'mvn -B -DskipTests clean package' }}
+              withMaven(maven: 'maven'){ sh 'mvn -B -DskipTests clean package' }
             } 
          }
     // Building Docker images

@@ -45,10 +45,5 @@
                 <version>3.3.0.603</version>
           </plugin>
         </plugins>
-        <build>
-        
-            
-        
-    </build>
-    </build>
+       </build>
 </project>

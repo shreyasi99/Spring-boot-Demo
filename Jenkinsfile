@@ -47,20 +47,17 @@ stage("Build maven jar") {
             '''
             }
         }
-     /*
      stage("Deploy"){
-        agent any 
-        
         steps {
            sh '''
-           kubectl create -f springboot.yml
-           kubectl expose deployment.apps/springboot-deploy --port=5000 --type=LoadBalancer
+           kubectl apply -f springboot.yml 
+           kubectl expose deployment.apps/springboot --port=5000 --type=LoadBalancer
            sleep 30
            kubectl get svc
            '''
         }
      }
-     */
+     
     }
 }
  

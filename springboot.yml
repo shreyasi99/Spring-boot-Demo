@@ -1,21 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: springboot
-
+  name: springboot-app
 spec:
-  replicas: 1
   selector:
     matchLabels:
-      env: production
-
+      app: springboot
+  replicas: 2 
   template:
     metadata:
-      name: springboot-pod
       labels:
-       env: production
-
+        app: springboot
     spec:
       containers:
-      - name: springboot-con
-        image: 655645242246.dkr.ecr.ap-south-1.amazonaws.com/mydockerrepo:v1
+      - name: springboot-container
+        image: shreya
+        ports:
+        - containerPort: 80

@@ -18,4 +18,4 @@ spec:
     spec:
       containers:
       - name: springboot-con
-        image: 655645242246.dkr.ecr.ap-south-1.amazonaws.com/mydockerrepo:v2
+        image: 655645242246.dkr.ecr.ap-south-1.amazonaws.com/mydockerrepo:v1

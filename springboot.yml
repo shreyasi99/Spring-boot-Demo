@@ -5,12 +5,12 @@ metadata:
 spec:
   selector:
     matchLabels:
-      app: springboot
+      app: springbootdemo
   replicas: 2 
   template:
     metadata:
       labels:
-        app: springboot
+        app: springbootdemo
     spec:
       containers:
       - name: springboot-container

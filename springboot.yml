@@ -14,5 +14,5 @@ spec:
     spec:
       containers:
       - name: springboot-container
-        image: 655645242246.dkr.ecr.ap-south-1.amazonaws.com/mydockerrepo:v1
+        image: shreya:v1
         
